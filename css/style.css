@@ -30,13 +30,14 @@ a {
  /* UTILS */
 
 .container {
-    max-width: 108px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 .wrapper {
     overflow: hidden;
+    height: 100vh;
 }
 
 /* DEBUG  */
@@ -62,4 +63,40 @@ a {
     border-radius: 10px;
     border: none;
     margin: 8px;
+}
+
+/* MAIN */
+
+.main {
+    background-color: #000000;
+
+    /* debug */
+    height: 800px;
+}
+
+.main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    overflow: scroll;
+    height: calc(100vh - 300px);
+}
+
+.main .card {
+    width: 300px;
+    max-width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.main .info {
+    color: white;
+    font-size: 1.3rem;
+    padding: 2px;
+    background-color: #5a6a77;
+    position:absolute;
+    bottom: 1px;
+    left: 0;
+    opacity: 0.7;
 }
