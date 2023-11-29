@@ -40,38 +40,31 @@ a {
     height: 100vh;
 }
 
-/* DEBUG  */
-
-.debug {
-    
-}
-
 /* HEADER */
 
 .header {
     min-height: var(--header-height);
-    background-color: black;
+    background-color: #222222;
     color: white;
     text-align: end;
 }
 
-.header button {
-    padding: 4px 10px;
-    font-size: 1.4rem;
-    color: white;
-    background-color: #4a4a4a;
-    border-radius: 10px;
-    border: none;
-    margin: 8px;
-}
 
 /* MAIN */
 
 .main {
     background-color: #000000;
+    text-align: end;
+}
 
-    /* debug */
-    height: 800px;
+.main button {
+    padding: 4px 10px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0 50px 0;
 }
 
 .main .container {
@@ -80,7 +73,7 @@ a {
     justify-content: space-between;
     row-gap: 20px;
     overflow: scroll;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 393px);
 }
 
 .main .card {
@@ -99,4 +92,43 @@ a {
     bottom: 1px;
     left: 0;
     opacity: 0.7;
+}
+
+/* FOOTER */
+
+.footer {
+    height: var(--footer-height);
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.footer .simbol {
+    font-size: 0.5rem;
+    display: inline-block;
+}
+
+.footer .didascalia {
+    font-size: 0.7rem;
+    padding: 4px;
+    text-align: center;
+}
+
+.footer #share {
+    color: #48cd00;
+}
+
+.footer #end {
+    font-size: 0.7rem;
+    color: red;
+    padding: 25px 20px;
+    background-color: #4a4a4a;
 }

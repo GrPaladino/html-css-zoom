@@ -14,21 +14,21 @@
 <body>
     <!-- HEADER -->
     <div class="wrapper">
-        <header class="header">
-        
-            <button class="speaker-view">
-                <i class="fa-solid fa-table-cells"></i> 
-                Speaker view
-            </button>
-        
-            <button class="fullscreen">
-                <i class="fa-solid fa-maximize"></i>
-            </button>
-        
-        </header>
+        <header class="header"></header>
     
         <!-- MAIN -->
+
             <main class="main">
+                
+                <button class="speaker-view">
+                    <i class="fa-solid fa-table-cells"></i> 
+                    Speaker view
+                </button>
+            
+                <button class="fullscreen">
+                    <i class="fa-solid fa-maximize"></i>
+                </button>
+                
                 <div class="container">
                     <div class="card">
                         <img src="https://picsum.photos/300/200" alt="">
@@ -449,7 +449,69 @@
             </main>
         
         <!-- FOOTER -->
-        <footer></footer>
+
+        <footer class="footer">
+            <div>
+                <button>
+                    <i class="fa-solid fa-microphone">
+                        <p class="simbol">&#8743;</p>
+                    </i>
+                    <p class="didascalia">Mute</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-video">
+                        <p class="simbol">&#8743;</p>
+                    </i>
+                    <p class="didascalia">Stop Video</p>
+                </button>
+            </div>
+            
+            <div>
+                <button>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <p class="didascalia">Invite</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-user-group"></i>
+                    <p class="didascalia">Manage Participants</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-share-from-square" id="share"></i>
+                    <p class="didascalia">Share screen</p>
+                </button>
+
+                <button>
+                    <p class="simbol">&#8743;</p>
+                    <i class="fa-solid fa-comment"></i>
+                    <p class="didascalia">Chat</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-record-vinyl"></i>
+                    <p class="didascalia">Record</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-table-cells"></i>
+                    <p class="didascalia">Breakout Rooms</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="didascalia">More</p>
+                    </i>
+                </button>
+            </div>
+
+            <div>
+                <button id="end">
+                   <p>EndMeeting</p>
+                </button>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
