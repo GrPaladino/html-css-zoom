@@ -50,4 +50,16 @@ a {
 .header {
     min-height: var(--header-height);
     background-color: black;
+    color: white;
+    text-align: end;
+}
+
+.header button {
+    padding: 4px 10px;
+    font-size: 1.4rem;
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    border: none;
+    margin: 8px;
 }
