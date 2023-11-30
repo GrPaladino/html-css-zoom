@@ -1,6 +1,6 @@
 :root {
-    --header-height: 150px;
-    --footer-height: 150px;
+    --header-height: 100px;
+    --footer-height: 80px;
 } 
  
  /* RESET */
@@ -44,11 +44,20 @@ a {
 
 .header {
     min-height: var(--header-height);
-    background-color: #222222;
+    background-color: black;
     color: white;
     text-align: end;
 }
 
+.header button {
+    padding: 4px 10px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+}
 
 /* MAIN */
 
@@ -57,23 +66,13 @@ a {
     text-align: end;
 }
 
-.main button {
-    padding: 4px 10px;
-    font-size: 1.3rem;
-    color: white;
-    background-color: #4a4a4a;
-    border-radius: 10px;
-    border: none;
-    margin: 10px 0 50px 0;
-}
-
 .main .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 20px;
     overflow: scroll;
-    height: calc(100vh - 393px);
+    height: calc(100vh - 180px);
 }
 
 .main .card {
@@ -101,6 +100,7 @@ a {
     background-color: #222222;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer button {
@@ -129,6 +129,6 @@ a {
 .footer #end {
     font-size: 0.7rem;
     color: red;
-    padding: 25px 20px;
+    padding: 30px 25px;
     background-color: #4a4a4a;
 }
